@@ -26,7 +26,7 @@
 
     function operationClick(event) {
         let img = document.querySelector("img");
-
+        
         if (isNaN(parseFloat(Celsius.value)) && isNaN(parseFloat(Fahrenheit.value))) {
             document.querySelector("#answer").innerHTML =
                 "Please enter a Temperature for Celisus or Fahrenheit";
@@ -68,7 +68,7 @@
     <lable for="Fahrenheit">Fahrenheit: </lable>
     <input type="number" id="Fahrenheit"><br>
     <input type="button" value="Convert" id="convBtn">
-    <span id="answer"></span>
+    <span id="answer" style="color:red"></span>
 
 
     <img src="warm.gif" alt="Warm Picture">
